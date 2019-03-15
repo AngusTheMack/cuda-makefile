@@ -35,8 +35,6 @@ CC  = /usr/local/cuda-10.0/bin/nvcc
 LDFLAGS = -L /usr/local/cuda-10.0/lib64
 IFLAGS 	= -I/usr/local/cuda-10.0/samples/common/inc
 
-all: histogram
-
 histogram: histo_main.cu
 	$(CC) histo_main.cu $(LDFLAGS) $(IFLAGS) -c $<
 	$(CC) histo_main.o  $(LDFLAGS) $(IFLAGS) -o histogram
