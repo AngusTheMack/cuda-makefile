@@ -31,7 +31,7 @@ It then sets the library flag (`LDFLAGS`) to the library files for Cuda on the l
 
 On line three the `IFLAGS`, includes the location of the `.h` files that are required for compiling `histo_main.cu`.
 ```makefile
-CC      = /usr/local/cuda-10.0/bin/nvcc
+CC  = /usr/local/cuda-10.0/bin/nvcc
 LDFLAGS = -L /usr/local/cuda-10.0/lib64
 IFLAGS 	= -I/usr/local/cuda-10.0/samples/common/inc
 
