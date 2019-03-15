@@ -4,10 +4,10 @@
 3. `make` - run the make command
 4. `./histogram` - run the executable
 
-I haven't touched the code in `histo_main.cu`, so it will likely say something is false. However, the code compiled without having to move files around or adding `nvcc` to the path - which is what this makefile helps with.
+I haven't touched the code in `histo_main.cu`, so it will likely say something is incorrect. However, the code compiled without having to move files around or adding `nvcc` to the path - which is what this makefile helps with.
 
 # Changes Made
-The initial document was [histo_main_before.cu](histo_main_before.cu), and the problem was that it had dependencies laid out with relative paths - which are frustrating to setup when working on different lab machines.
+The initial document was [histo_main_before.cu](histo_main_before.cu), and the problem was that it had dependencies laid out with relative paths - which are tricky to continuously setup when working on different lab machines.
 
 The relative paths are the second and third lines below:
 ```C++
