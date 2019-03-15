@@ -4,7 +4,7 @@
 3. `make` - run the make command
 4. `./histogram` - run the executable
 
-I haven't touched the code in `histo_main.cu`, so it will likely say something is incorrect. However, the code compiled without having to move files around or adding `nvcc` to the path - which is what this makefile helps with.
+I haven't touched the code in `histo_main.cu`, so it will say "Test failed". However, the code compiled without having to move files around or adding `nvcc` to the path - which is what this makefile helps with.
 
 # Changes Made
 The initial document was [histo_main_before.cu](histo_main_before.cu), and the problem was that it had dependencies laid out with relative paths - which are tricky to continuously setup when working on different lab machines.
@@ -44,3 +44,6 @@ Then the `histogram` target is compiled with all the necessary flags, and output
 
 # Notes
 This makefile will only work for the Lab computers at wits, and it won't work for every program. If you want to run a different `.cu` file you will have to change the related objects and targets. You may also have to change the `-I` flag (or add more) to point to different header files depending on what the other files have `#included`.
+
+# Acknowledgements
+Thanks to Dr Hairong Wang for taking the High Performance Computing course at the University of Witswatersrand. The `hist_main.cu` file was supplied by her as an example for one of the labs in the course. 
